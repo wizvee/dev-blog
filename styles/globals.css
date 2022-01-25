@@ -1,16 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+  /* theme properties */
+  --THEME-COLOR: var(--user-theme-color, #f0f0ef);
+  --FONT-COLOR: var(--user-font-color, #323537);
+  --FONT-SIZE: var(--user-font-size, 1.2em);
+  /* point colors */
+  --red: #fc6879;
+  --yellow: #ffd02c;
+  --green: #69cfbb;
+  --violet: #9c9bf4;
+}
+
+body {
+  background: var(--THEME-COLOR);
+  font-size: var(--FONT-SIZE);
+  color: var(--FONT-COLOR);
+  font-family: "S-CoreDream-3Light", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "S-CoreDream-6Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
