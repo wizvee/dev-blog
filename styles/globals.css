@@ -2,7 +2,7 @@
   /* theme properties */
   --THEME-COLOR: var(--user-theme-color, #f0f0ef);
   --FONT-COLOR: var(--user-font-color, #323537);
-  --FONT-SIZE: var(--user-font-size, 1.2em);
+  --FONT-SIZE: var(--user-font-size, 1rem);
   /* point colors */
   --red: #fc6879;
   --yellow: #ffd02c;
@@ -15,6 +15,80 @@ body {
   font-size: var(--FONT-SIZE);
   color: var(--FONT-COLOR);
   font-family: "S-CoreDream-3Light", sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: 2.4rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.7rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.3rem;
+}
+
+h4,
+.h4,
+p,
+ul,
+ol,
+dl {
+  font-size: 1rem;
+}
+
+h5,
+.h5 {
+  font-size: 0.75rem;
+}
+
+h6,
+.h6,
+small,
+.small {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 40em) {
+  h1,
+  .h1 {
+    font-size: 3.2rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.9rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+  }
+
+  h4,
+  .h4,
+  p,
+  ul,
+  ol,
+  dl {
+    font-size: 1rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 0.75rem;
+  }
+
+  h6,
+  .h6,
+  small,
+  .small {
+    font-size: 0.75rem;
+  }
 }
 
 h1,
@@ -33,7 +107,6 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "S-CoreDream-6Bold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff")
